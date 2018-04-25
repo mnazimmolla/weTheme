@@ -1,0 +1,822 @@
+/*------------------------------------------------------------------- /
+
+Theme Name: Hello
+Theme URI: http://helloacademy.co/
+Author: Hello Academy
+Author URI: http://helloacademy.co/
+Description: Hello is a HTML Template
+Version: 1.0
+
+--------------------------------------------------------------------- */
+
+
+
+
+/*  - Goolge fonts loading
+-------------------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,700,900,400,300);
+
+/*  - Goolge fonts loading end
+-------------------------------------------------------------------------*/
+
+
+/*  - Global Area 
+-------------------------------------------------------------------------*/
+body {
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+	line-height: 20px;
+}
+
+button,span,img,a,p,h4,li,em,.icon,.btn,.form-control {
+	-webkit-transition: all .25s ease;
+	   -moz-transition: all .25s ease;
+		-ms-transition: all .25s ease;
+		 -o-transition: all .25s ease;
+			transition: all .25s ease;
+}
+
+
+.sidebar .widget a:hover, a:focus {
+    color: #f6904d !important;
+    text-decoration: none !important;
+}
+.sidebar .widget a{
+	text-decoration: none !important;
+	color: #000 !important;
+}
+.sidebar .widget li {
+	
+	list-style: none !important;
+}
+.screen-reader-text {
+	
+	visibility: hidden !important;
+	margin-left:50px;
+}
+/*  - Reset
+---------------------------------------*/
+ul {
+	padding: 0;
+	margin:0;
+}
+.form-control {
+	border-radius: 0;
+	box-shadow: none;
+}
+.form-control:focus {
+	border-color: #f6904d;
+}
+/*  - Reset end 
+---------------------------------------*/
+
+
+/*  - Scroll To Top
+---------------------------------------*/
+.scrollup {
+	width: 47px;
+	height: 46px;
+	position: fixed;
+	padding: 5px;
+	bottom: 40px;
+	right: 40px;
+	color: #ffffff;
+	font-size: 2em;
+	text-align: center;
+	line-height: 36px;
+	cursor: pointer;
+	background-color: #52b4c4;
+	z-index: 9999;
+	display: none;
+}
+/*  - Scroll To Top End
+---------------------------------------*/
+
+
+/*  - Custom btn Style
+---------------------------------------*/
+.btn {
+	font-size: 1.2857em;
+	font-weight: 600;
+	padding: 12px 25px;
+}
+.custom-btn {
+	color: #ffffff;
+	background-color: #e80000;
+}
+.btn:hover, 
+.btn:focus {
+	color: #ffffff;
+}
+
+/*  - Custom btn Style
+---------------------------------------*/
+
+/*  - Default Style
+---------------------------------------*/
+.section-padding {
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+.section-head {
+	text-align: center;
+	padding-bottom: 40px;
+}
+.section-title {
+	color: #000000;
+	font-size: 1.7142em;
+	font-weight: 700;
+}
+.section-title span {
+	font-weight: 700;
+}
+.section-description {
+	max-width: 625px;
+	margin: 0 auto;
+}
+.inner-item {
+	max-width: 262px;
+	margin: 0 auto 30px auto;
+}
+.icon {
+	color: #ffffff;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 40px;
+	margin-right: 10px;
+}
+.overlay {
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+}
+
+/*  - Default Style End
+---------------------------------------*/
+
+
+/*  3 - Main Menu 
+-------------------------------------------------------------------------*/
+
+.main-menu {
+	z-index: 999;
+	background-color: #ffffff;
+}
+
+.main-menu nav li a {
+	font-weight: 600 !important;
+}
+.main-menu nav > li > a:hover {
+	color: #e80000 !important;
+}
+.main-menu .nav>li>a {
+	color: #000000;
+	font-size: 1.1428em;
+	padding: 30px 20px;
+	text-transform: uppercase;
+}
+.main-menu .nav>li>a:hover {
+	color: #e80000;
+}
+.main-menu .navbar {
+	margin-bottom: 0; 
+}
+.main-menu .navbar>.container .navbar-brand, 
+.main-menu .navbar>.container-fluid .navbar-brand {
+	padding-top: 12px;
+}
+.main-menu .navbar-default {
+	background: none;
+	border: 0;
+}
+.main-menu .navbar-fixed-top {
+	background-color: #ffffff;
+}
+.main-menu .navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+.main-menu .navbar-default .navbar-toggle .icon-bar {
+	background-color: #e80000;
+}
+.main-menu .navbar-default .navbar-toggle:hover {
+	color: #ffffff;
+	background-color: #e80000;
+}
+.main-menu .navbar-default .navbar-toggle:hover .icon-bar {
+	background-color: #ffffff;
+} 
+.navbar-default .navbar-toggle {
+	border-color: #e80000;
+}
+
+/*  - search box 
+---------------------------------*/
+ul#main-nav {
+  	margin-right: 60px;
+}
+.search-bar {
+	position: absolute;
+	top: 27px;
+	right: 25px;
+	display: block;
+}
+.search-bar .btn {
+	border: none;
+}
+.toggle-pade {
+	color: #e80000;
+}
+.form-box {
+	position: relative;
+}
+.navbar-form .form-group {
+	display: none;
+	margin-top: 20px;
+}
+.search-bar .form-group {
+	position: absolute;
+	right: 15px;
+	display: none;
+	z-index: 9999;
+}
+.navbar-toggle {
+	margin-right: 47px;
+}
+.navbar-form {
+	border: 0;
+	box-shadow: none;
+}
+.search-bar .form-control {
+	color: #e80000;
+	width: 250px;
+	background-color: transparent;
+}
+.search-bar .btn {
+	color: #e80000;
+	font-size: 1.2em;
+	font-weight: 700;
+	background-color: transparent;
+	outline-color: transparent;
+	padding: 1px; 
+}
+.search-bar .btn:focus, 
+.search-bar .btn:active:focus {
+	 outline: 0 auto -webkit-focus-ring-color; 
+}
+
+/*  - search box End
+---------------------------------*/
+
+.main-menu-container {
+	min-height: 20px;
+}
+
+/*  3 - Main Menu End
+-------------------------------------------------------------------------*/
+
+
+/*   - Slider Section 
+-------------------------------------------------------------------------*/
+
+.slider-container {
+	background: url(../../images/bg/bg.jpg) no-repeat;
+	background-size: cover;
+}
+.slider-txt {
+	padding-top: 210px;
+	padding-bottom: 100px;
+}
+.slider-txt .title {
+	color: #ffffff;
+	font-size: 3.4285em;
+	font-weight: 700;
+}
+.slider-txt .title span {
+	color: #e80000;
+}
+.slider-description {
+	max-width: 870px;
+	margin: 0 auto;
+	color: #ffffff;
+	font-size: 1.2857em;
+	line-height: 25px;
+	padding-bottom: 55px;
+}
+
+/*   - Slider Section End
+-------------------------------------------------------------------------*/
+
+
+
+/*   - Features Section
+-------------------------------------------------------------------------*/
+.features-section .icon {
+	width: 85px;
+	height: 70px;
+	color: #e80000;
+	line-height: 55px;
+	font-size: 4.2857em;
+}
+.features-section .item-title {
+	padding: 10px 0 5px 0;
+}
+.features-section .item-title a {
+	color: #000000;
+	font-weight: 700;
+	font-size: 1.2857em;
+	text-decoration: none;
+}
+.features-section .inner-item:hover .item-title a,
+.features-section .inner-item:hover .icon {
+	color: #e80000;
+}
+
+/*   - Features Section End
+-------------------------------------------------------------------------*/
+
+
+/*   - Team Section
+-------------------------------------------------------------------------*/
+.team-section {
+	background-color: #f6f8f9;
+}
+.team-section .inner-item {
+	border: 1px solid #deebed;
+}
+.member-info {
+	padding: 12px 15px;
+	border-top: 1px solid #deebed;
+}
+.name a {
+	color: #e80000;
+	font-weight: 700;
+	font-size: 1.2857em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+/*   - Team Section End
+-------------------------------------------------------------------------*/
+
+
+/*  - Portfolio Section
+-------------------------------------------------------------------------*/
+
+#portfolio-container{
+	max-width: 1445px;
+	margin: 0 auto 0 auto;
+}
+.portfolio-section.section-padding {
+	padding-bottom: 100px;
+}
+.portfolio-items figure {
+	float: left;
+	margin: 0 2px 10px;
+	overflow: hidden;
+	height: 330px;
+	width: 30%;
+}
+.portfolio-items figure img {
+	width: 100%;
+	height: auto;
+}
+.portfolio-items a {
+	-webkit-transition: all .3s  ease;
+	-moz-transition: all .3s  ease;
+	-ms-transition: all .3s  ease;
+	-o-transition: all .3s  ease;
+	transition: all .3s  ease;
+}
+.portfolio-items figure img {
+	-webkit-transition: -webkit-transform .3s  ease;
+	-moz-transition: -moz-transform .3s  ease;
+	-ms-transition: -ms-transform .3s  ease;
+	-o-transition: -o-transform .3s  ease;
+	transition: transform .3s  ease;
+}
+.portfolio-items .item-w2 {
+	background: #ED9393;
+	width: 60%;
+}
+.portfolio-items .item-h2 {
+	background: #7CB744;
+	height: 618px;
+}
+.portfolio-items .item-h3 {
+	background: #38B5E5;
+}
+.isotope .isotope-item {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	-ms-transition-property: -ms-transform, opacity;
+	-o-transition-property: -o-transform, opacity;
+	transition-property: transform, opacity;
+}
+.PortfolioFilter {
+	padding-bottom: 40px;
+}
+.PortfolioFilter a {
+	color: #000000;
+	display: inline-block;
+	margin: 0 5px 9px 0;
+	padding: 10px;
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	border: 2px solid #deebed;
+	border-radius: 3px;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.PortfolioFilter a:hover {
+	color: #e80000;
+	text-decoration: none;
+}
+.PortfolioFilter .current {
+	color: #ffffff;
+	background-color: #e80000;
+	border: 2px solid #e80000;
+}
+.PortfolioFilter a:focus {
+	color: #ffffff;
+}
+.portfolio-items figure {
+	position: relative;
+}
+/*  - Caption Effects End
+---------------------------------*/
+
+/*  - Portfolio Section End
+-------------------------------------------------------------------------*/
+
+
+/*  - Pricing Section
+-------------------------------------------------------------------------*/
+.pricing-section {
+	background-color: #f6f8f9;
+}
+.pricing-section .inner-item {
+	color: #ffffff;
+}
+.pricing-section .item-title h3 {
+	font-weight: 700;
+	font-size: 1.7142em;
+	text-transform: uppercase;
+	margin: 0;
+}
+.pricing-section .item-title {
+	background-color: #e80000;
+	padding: 20px 0;
+}
+.pricing-range {
+	text-transform: uppercase;
+	/*background-color: #f4c548;*/
+	padding: 30px 0 20px;
+}
+.currency-number {
+	font-size: 2.1428em;
+	font-weight: 900;
+}
+.list-wrap {
+	padding-top: 20px;
+	padding-bottom: 30px;
+	border-right: 3px solid #e1e1e1;
+	border-bottom: 3px solid #e1e1e1;
+	border-left: 3px solid #e1e1e1;
+}
+.pricing-section ul {
+	list-style: none;
+	padding-bottom: 15px;
+}
+.pricing-section ul a {
+	color: #040404;
+	text-decoration: none;
+	padding: 8px 0;
+	display: block;
+}
+.pricing-section .btn {
+	font-size: 1em;
+	padding: 9px 20px;
+	font-weight: 400;
+}
+.casablanca {
+	background-color: #f4c548;
+}
+.picton-bluev {
+	background-color: #48c5f4;
+}
+.carnation {
+	background-color: #f45151;
+}
+.pomegranate {
+	background-color: #f4440e;
+}
+/*  - Pricing Section End
+-------------------------------------------------------------------------*/
+
+
+/*  - Footer Section 
+-------------------------------------------------------------------------*/
+.footer-container {
+	color: #888887;
+	background-color: #1c1c1b;
+}
+.footer-container h3 {
+	font-size: 1.2857em;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+.footer-widget {
+	padding: 50px 0;
+	display: inline-block;
+}
+/*  - address
+----------------------------------*/
+.address p {
+	padding-bottom: 15px;
+}
+.address .icon {
+	height: 20px;
+	width: 20px;
+	float: left;
+	color: #e80000;
+	font-size: 1.2857em;
+	line-height: 15px;
+}
+.address .txt {
+	display: block;
+	overflow: hidden;
+}
+/*  - address End
+----------------------------------*/
+
+
+/*  - tweet
+----------------------------------*/
+.latest-tweets {
+	margin-bottom: 15px;
+}
+.latest-tweets a {
+	color: #888887;
+}
+.latest-tweets p {
+	color: #e80000;
+	padding-top: 5px;
+}
+/*  - tweet End
+----------------------------------*/
+
+
+/*  - Links
+----------------------------------*/
+.quick-link a {
+	color: #888887;
+	display: block;
+	font-weight: 700;
+	padding-bottom: 10px;
+}
+
+/*  - Links End
+----------------------------------*/
+
+/*  - Footer Section End
+-------------------------------------------------------------------------*/
+
+
+/*  - Blog Pages
+-------------------------------------------------------------------------*/
+#heading {
+	background: url(../../images/bg/blog.jpg) no-repeat;
+	background-size: cover;
+}
+#heading h1 {
+	color: #ffffff;
+	font-weight: 700;
+	padding-top: 118px;
+	padding-bottom: 70px;
+	text-transform: uppercase;
+}
+.blog-content {
+	padding: 70px 0;
+}
+/*  - Single Post
+----------------------------------------*/
+.single-post .entry-date {
+	font-weight: 700;
+	font-size: 1.2857em;
+}
+.single-post .entry-title {
+	color: #000000;
+	font-weight: 700;
+	font-size: 1.2857em;
+	display: block;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+.single-post .auther a {
+	color: #000000;
+}
+.single-post .entry-comtent {
+	padding-top: 10px;
+}
+.single-post .entry-comtent a {
+	color: #f6904d;
+	font-weight: 700;
+}
+.single-post a:hover {
+	color: #f6904d;
+	text-decoration: none;
+}
+/*  - Single Post End
+----------------------------------------*/
+
+/*  - sidebar
+-------------------------------------------------*/
+.sidebar {
+	padding-left: 30px;
+}
+.sidebar .widget {
+	padding-bottom: 30px;
+}
+.sidebar .title {
+	color: #000000;
+	font-weight: 700;
+	font-size: 1.2857em;
+}
+/*  - Blog Search 
+---------------------------------*/
+.blog-search-bar .form-control {
+	font-size: 1em;
+	height: 44px;
+	box-shadow: none;
+}
+.input-append {
+	position: relative;
+}
+.add-on {
+	top: 0;
+	right: 0;
+	position: absolute;
+	width: 40px;
+	height: 100%;
+	border: none;
+	background: none;
+}
+button, html input[type=button], 
+input[type=reset], 
+input[type=submit] {
+	outline: none;
+}
+/*  - Blog Search End
+---------------------------------*/
+
+/*  - Recent Artice
+---------------------------------*/
+.article ul {
+	list-style: none;
+}
+.article ul a {
+	color: #000000;
+	padding: 5px 0;
+	display: block;
+	text-decoration: none;
+}
+.article ul a:hover {
+	color: #f6904d;
+}
+/*  - Recent Artice End
+---------------------------------*/
+
+/*  - About Me
+---------------------------------*/
+.about-me p {
+	padding-top: 15px;
+}
+/*  - About Me End
+---------------------------------*/
+
+/*  - Select Option
+---------------------------------*/
+select {
+	height: 40px;
+	width: 230px;
+}
+select option {
+	padding: 3px 0;
+	display: block;
+}
+/*  - Select Option End
+---------------------------------*/
+
+/*  - sidebar End
+-------------------------------------------------*/
+/*  - Blog Pages End
+-------------------------------------------------------------------------*/
+
+
+/*  - Portfolio Pages
+-------------------------------------------------------------------------*/
+.portfolio-content {
+	padding: 100px 0 70px 0;
+}
+.portfolio-content a {
+	text-decoration: none;
+}
+.portfolio-content .inner-item span {
+	color: #080707;
+	font-weight: 700;
+	font-size: 1.2857em;
+	padding-bottom: 10px;
+	display: block;
+}
+
+/*  - Single Portfolio
+-------------------------------------------------*/
+
+.portfolio-content .single-portfolio .post-txt h4 {
+	font-weight: 700;
+}
+.portfolio-content .single-portfolio .post-txt h5 {
+	font-weight: 600;
+}
+.portfolio-content .single-portfolio .post-content {
+	padding-bottom: 15px;
+}
+.portfolio-content .single-portfolio .post-txt a {
+	color: #e80000;
+}
+/*  - Single Portfolio
+-------------------------------------------------*/
+
+/*  - Portfolio Pages End
+-------------------------------------------------------------------------*/
+
+
+/*  - About Pages
+-------------------------------------------------------------------------*/
+.about-container {
+	padding: 50px 0;
+}
+.about-content .post-img {
+	float: left;
+	padding: 0 15px 15px 0;
+}
+/*  - About Pages End
+-------------------------------------------------------------------------*/
+
+/*  - About Pages
+-------------------------------------------------------------------------*/
+.contact-wrap {
+	padding: 30px 0 50px 0;
+}
+.contact-wrap h3 {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.contact-wrap .box {
+	padding-top: 15px;
+}
+.box .form-control {
+	margin-bottom: 18px;
+}
+.box textarea {
+	height: 100px;
+}
+.box input[type=submit] {
+	padding: 8px 35px;
+	color: #ffffff;
+	font-weight: 700;
+	background-color: #f6904d;
+	border: none;
+	text-transform: uppercase;
+}
+
+.widget a {
+	color: #888887;
+   	display: block;
+    	font-weight: 700;
+    	padding-bottom: 10px;
+    	text-decoration: none;
+    	
+}
+.widget li {
+	list-style-type: none;
+}
+/*  - About Pages End
+-------------------------------------------------------------------------*/
+
+

@@ -1,0 +1,184 @@
+
+/*-------- CSS CODE FOR RESPONSIVE LAYOUT --------*/
+
+/*  To make Responsive
+---------------------------------------------------------------------- /
+*
+*   2 - media screen and (max-width: 1199px)
+*   3 - media screen and (max-width: 991px)
+*   4 - media screen and (max-width: 767px)
+*   5 - media screen and (max-width: 680px)
+*   6 - media screen and (max-width: 480px)
+*
+---------------------------------------------------------------------- */
+
+
+/*  2 - media screen and (max-width: 1199px)
+---------------------------------------------------------------------- */
+
+@media screen and (max-width: 1199px) { /* for medium device */
+	/*.navbar-nav>li>a {
+	  	padding: 35px 18px;
+	}*/
+}
+
+/*  2 - media screen and (max-width: 1199px) End
+---------------------------------------------------------------------- */
+
+
+/*  3 - media screen and (max-width: 991px)
+---------------------------------------------------------------------- */
+
+@media screen and (max-width: 991px) { /* for medium device */
+
+	/*  - Main Menu
+	-----------------------------------------*/
+	.navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+   .navbar-collapse.collapse.in {  /* NEW */
+        display: block!important; 
+    }
+	.main-menu .container {
+		width: 100%;
+	}
+	.main-menu .nav>li>a {
+		color: #ffffff;
+	}
+	.main-menu {
+		padding: 13px 0 0 0;
+	}
+	.main-menu .navbar>.container .navbar-brand, 
+	.main-menu .navbar>.container-fluid .navbar-brand {
+		width: 180px;
+		padding: 0 25px;
+	}
+	.main-menu .container>.navbar-header, 
+	.main-menu .container-fluid>.navbar-header, 
+	.main-menu .container>.navbar-collapse, 
+	.main-menu .container-fluid>.navbar-collapse {
+		width: 100%;
+		padding: 0 0 12px 0;
+	}
+	.main-menu #main-nav > li {
+		float: none;
+		color: #737d8b;
+		background-color: #292d39;
+		border-top: 1px solid #353b4a;
+	}
+	#main-nav li:first-child {
+		border: none;
+	}
+	.main-menu .nav>li>a {
+		padding: 15px 20px;
+	}
+	.main-menu .navbar-nav {
+		width: 100%;
+		margin: 0;
+	}
+	.main-menu .navbar-default .navbar-nav>.active>a, 
+	.main-menu .navbar-default .navbar-nav>.active>a:hover, 
+	.main-menu .navbar-default .navbar-nav>.active>a:focus {
+		color: #ffffff;
+		background-color: #292d39;
+	} 
+	.main-menu .navbar-default .navbar-nav>.active>a:hover, 
+	.main-menu .navbar-default .navbar-nav>.active>a:focus {
+		color: #ffffff !important;
+	}
+	.navbar-fixed-top .navbar-collapse, 
+	.navbar-fixed-bottom .navbar-collapse {
+		max-height: 340px !important;
+	}
+	.navbar-collapse.in {
+		overflow-y: auto !important;
+	}
+	/*  - Serch bar
+	-----------------------------------------*/
+	.search-bar {
+		top: 12px;
+		right: 10px;
+	}
+	.navbar-form .form-group {
+	  	margin-top: 12px;
+	}
+	/*  - Serch bar End
+	-----------------------------------------*/
+
+	/*  - Main Menu End
+	-----------------------------------------*/
+	.post-img {
+		padding-bottom: 30px;
+	}
+	.sidebar {
+		padding-left: 0;
+	}
+
+}
+
+/*  3 - media screen and (max-width: 991px) End
+---------------------------------------------------------------------- */
+
+
+/*  4 - media screen and (max-width: 767px)
+---------------------------------------------------------------------- */
+
+@media screen and (max-width: 767px){ /*For Mobile Device*/
+
+	.navbar-default .navbar-toggle {
+		margin-right: 35px;
+	}
+	.main-menu .navbar>.container .navbar-brand, 
+	.main-menu .navbar>.container-fluid .navbar-brand {
+		padding: 0 0;
+		width: 150px;
+	}
+	.container>.navbar-header, 
+	.container-fluid>.navbar-header, 
+	.container>.navbar-collapse, 
+	.container-fluid>.navbar-collapse {
+		margin-left: 0;
+	}
+	.navbar-form .form-group {
+	  	margin-top: 2px;
+	}
+}
+
+/*  4 - media screen and (max-width: 767px) End
+---------------------------------------------------------------------- */
+
+
+/*  5 - media screen and (max-width: 680px)
+---------------------------------------------------------------------- */
+
+@media screen and (max-width: 680px){ /*For Mobile Device*/
+	
+}
+
+/*  5 - media screen and (max-width: 680px) End
+---------------------------------------------------------------------- */
+
+
+/*  6 - media screen and (max-width: 480px)
+---------------------------------------------------------------------- */
+
+@media screen and (max-width: 480px){ /*For Mobile Device*/
+	.navbar-default .navbar-toggle {
+	  	margin-right: 0;
+	}
+	.navbar-toggle {
+	  	margin-right: 15px;
+	}
+	.search-bar {
+		display: none;
+	}
+	.about-content .post-img {
+		float: none;
+	}
+}
+
+/*  6 - media screen and (max-width: 480px) End
+---------------------------------------------------------------------- */
